@@ -1,0 +1,58 @@
+@import './config';
+@import './header';
+
+body {
+    font-family: $montserrat;
+}
+
+.blue {
+    color: $blue;
+}
+
+.soft_blue {
+    color: $soft_blue;
+}
+
+.orange {
+    color: $orange;
+}
+
+.black {
+    color: $black;
+}
+
+.white {
+    color: $white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 3.5rem;
+}
+
+.container {
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-btn {
+    padding: 1rem 2rem;
+    background-color: $orange;
+    color: $white;
+    border-radius: 0.75rem;
+    border: none;
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2.5rem;
+
+    &:hover {
+        background-color: rgba($orange, 0.8);
+    }
+}

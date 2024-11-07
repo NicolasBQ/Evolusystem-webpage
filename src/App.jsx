@@ -1,11 +1,14 @@
-import './main.scss'
+import './scss/main.scss';
+import { Header } from './Header';
+import { Hero } from './Hero';
 
 function App() {
   return (
     <>
-      <div className='test'>
-        <h1 className='test-title'>Evolusystem</h1>
-      </div>
+      <Header />
+      <main>
+        <Hero />
+      </main>
     </>
   )
 }

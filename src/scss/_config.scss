@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$montserrat: "Montserrat", serif;
+
+$blue: #0E6FFF;
+$soft_blue: #A1C7FF;
+$orange: #FB6028;
+$black: #121212;
+$white: #fafafa;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
