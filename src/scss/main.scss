@@ -1,8 +1,26 @@
 @import './config';
 @import './header';
+@import './about';
+@import './review';
+@import './contact';
+@import './footer';
+@import './info';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: $montserrat;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .blue {
@@ -33,11 +51,55 @@ body {
     font-size: 3.5rem;
 }
 
+.title {
+    margin-bottom: 2rem;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.big_text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .container {
     padding: 3rem 5rem;
+}
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.reverse-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }
 
 .contact-btn {
@@ -55,4 +117,20 @@ body {
     &:hover {
         background-color: rgba($orange, 0.8);
     }
+}
+
+.more {
+    margin-top: 2rem;
+    text-decoration: underline;
+    color: $orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input {
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid $gray;
+    font-size: 1rem;
+    font-family: $montserrat;
 }

@@ -1,0 +1,8 @@
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-border {
+        border-right: 2px solid $gray;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-color: $orange;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-pages li{
+        list-style: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+    }
+}
