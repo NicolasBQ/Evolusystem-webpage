@@ -1,6 +1,7 @@
 import computers from './assets/service_computers.png';
 import printers from './assets/service_printers.png';
 import camaras from './assets/service_camaras.png';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
@@ -14,7 +15,9 @@ const Services = () => {
                     <p className='black'>
                         Mantén tus equipos al máximo rendimiento con nuestro servicio de mantenimiento. Solucionamos problemas, optimizamos sistemas y garantizamos que tus computadores funcionen de forma rápida y segura en todo momento.
                     </p>
-                    <p className='more'>Conocer Más</p>
+                    <Link to='/computadores'>
+                        <p className='more'>Conocer Más</p>
+                    </Link>
                 </div>
             </article>
 
@@ -27,7 +30,9 @@ const Services = () => {
                     <p className='black'>
                         Nos encargamos de reparar y mantener tus impresoras para que no pierdas productividad. Diagnósticos rápidos y soluciones precisas para que cada impresión sea impecable y sin interrupciones.
                     </p>
-                    <p className='more'>Conocer Más</p>
+                    <Link to='impresoras'>
+                        <p className='more'>Conocer Más</p>
+                    </Link>
                 </div>
             </article>
 
@@ -40,7 +45,9 @@ const Services = () => {
                     <p className='black'>
                         Asegura tus espacios con sistemas de videovigilancia confiables. Realizamos la instalación completa y ajustamos la configuración para maximizar la seguridad de tus áreas clave, siempre con la mejor tecnología.
                     </p>
-                    <p className='more'>Conocer Más</p>
+                    <Link to='/camaras'>
+                        <p className='more'>Conocer Más</p>
+                    </Link>
                 </div>
             </article>
         </section>
